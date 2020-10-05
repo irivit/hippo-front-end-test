@@ -10,4 +10,7 @@
   @media (min-width: $screen-md-min) {
     width: calc(100% / 3);
   }
+  @media (max-width: $screen-sm-min) {
+    width: calc(100% / 2);
+  }
 }
