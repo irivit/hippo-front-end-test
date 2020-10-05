@@ -2,29 +2,14 @@
 
 
 
-.image-grid {
-  // display: flex;
-  // flex-wrap: wrap;
+.image-grid .MuiGrid-root{
+  line-height: 0;
+  width: 100%;
 }
 
 .image-grid__image {
   width: 100%;
-  // @media (min-width: $screen-md-min) {
-  //   width: calc(100% / 3);
-  // }
-  // @media (max-width: $screen-sm-min) {
-  //   width: calc(100% / 2);
-  //   width: 100%;
-  //   height: auto;
-  // }
+  margin: 0;
+  padding: 0;
 
-}
-
-@media (max-width: $screen-sm-min) {
-  // .image-container {
-  //   height: 0;
-  //   position: relative;
-  //   overflow: hidden;
-  //   padding-bottom: 75%;
-  // }
 }

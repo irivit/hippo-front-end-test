@@ -14,42 +14,23 @@ import grid6 from '../../images/grid6.png';
 function ImageGrid() {
   return (
     <div className="image-grid">
-      {/* <div className="image-container">
-        <img className="image-grid__image" alt="product 1" src={grid1} />
-      </div>
-      <div className="image-container">
-        <img className="image-grid__image" alt="product 2" src={grid2} />
-      </div>
-      <div className="image-container">
-        <img className="image-grid__image" alt="product 3" src={grid3} />
-      </div>
-      <div className="image-container">
-        <img className="image-grid__image" alt="product 4" src={grid4} />
-      </div>
-      <div className="image-container">
-        <img className="image-grid__image" alt="product 5" src={grid5} />
-      </div>
-      <div className="image-container">
-        <img className="image-grid__image" alt="product 6" src={grid6} />
-      </div> */}
-
       <Grid container spacing={0}>
-        <Grid item xs={6} sm={4}>
+        <Grid item xs={6} sm={6} md={4} lg={4}>
           <img className="image-grid__image" alt="product 1" src={grid1} />
         </Grid>
-        <Grid item xs={6} sm={4}>
+        <Grid item xs={6} sm={6} md={4} lg={4}>
           <img className="image-grid__image" alt="product 2" src={grid2} />
         </Grid>
-        <Grid item xs={6} sm={4}>
+        <Grid item xs={6} sm={6} md={4} lg={4}>
           <img className="image-grid__image" alt="product 3" src={grid3} />
         </Grid>
-        <Grid item xs={6} sm={4}>
+        <Grid item xs={6} sm={6} md={4} lg={4}>
           <img className="image-grid__image" alt="product 1" src={grid4} />
         </Grid>
-        <Grid item xs={6} sm={4}>
+        <Grid item xs={6} sm={6} md={4} lg={4}>
           <img className="image-grid__image" alt="product 2" src={grid5} />
         </Grid>
-        <Grid item xs={6} sm={4}>
+        <Grid item xs={6} sm={6} md={4} lg={4}>
           <img className="image-grid__image" alt="product 3" src={grid6} />
         </Grid>
       </Grid>
