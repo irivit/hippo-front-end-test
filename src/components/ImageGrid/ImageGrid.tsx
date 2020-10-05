@@ -10,49 +10,6 @@ import grid6 from '../../images/grid6.png';
 
 function ImageGrid() {
   return (
-  //   <Grid container spacing={2} className="image-grid">
-  //   <Grid item xs={3}>
-  //     <a href="https://www.hippoed.com/" className="navbar-brand">
-  //       HIPPO <span className="navbar-brand-span">EDUCATION</span>
-  //     </a>{' '}
-  //     <div className="navbar-menu-mobile">
-  //       <IconButton
-  //         aria-label="show more"
-  //         aria-haspopup="true"
-  //         color="inherit"
-  //       >
-  //         <MenuIcon />
-  //       </IconButton>
-  //     </div>
-  //   </Grid>
-  //   <Grid item xs={6}>
-  //     <a href="https://www.hippoed.com/" className="navbar-brand-mobile">
-  //       HIPPO <span className="navbar-brand-span">EDUCATION</span>
-  //     </a>{' '}
-  //   </Grid>
-  //   <Grid item xs={3}>
-  //     <div className="navbar-right">
-  //       <ul>
-  //         <li className="navbar-products">
-  //           <a href="https://www.hippoed.com/" className="nav-products">
-  //             Products{' '}
-  //             <span className="navbar-hippo-products">From Hippo</span>
-  //             <Divider
-  //               orientation="vertical"
-  //               flexItem
-  //               className="something"
-  //             />
-  //           </a>
-  //         </li>
-  //         <li>
-  //           <Button className="navbar-button_signin">Sign in</Button>
-  //         </li>
-  //       </ul>
-  //     </div>
-  //   </Grid>
-  // </Grid>
-
-
     <div className="image-grid">
       <img className="image-grid__image" alt="product 1" src={grid1} />
       <img className="image-grid__image" alt="product 2" src={grid2} />
