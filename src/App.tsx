@@ -2,6 +2,7 @@ import React from 'react';
 import ImageGrid from './components/ImageGrid/ImageGrid';
 import TopicCloud from './components/TopicCloud/TopicCloud';
 import Navbar from './components/Navbar/Navbar';
+import Button from './components/Button/Button';
 
 import './App.scss';
 
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <h1 className="header-container__headline">
           Empowering the people of medicine through education and community.
+          <Button />
         </h1>
       </div>
       <div className="page-content">

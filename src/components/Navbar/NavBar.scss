@@ -21,8 +21,11 @@
   color: white;
   font-weight: bold;
   margin-left: 15px;
-  margin-top: 25px;
+  padding-top: 25px !important;
+  font-family: $font-family-brand;
 }
+
+
 a:hover {
   text-decoration: none !important;
   color: white;
@@ -35,8 +38,9 @@ a:hover {
   color: white;
   background-color: transparent;
   text-decoration: none;
-  letter-spacing: 3px;
+  // color: $logo-text-color;
   margin-left: 15px;
+  font-family: $font-family-brand;
   @media (max-width: $screen-sm-min) {
     margin-left: 0;
   }
@@ -62,7 +66,7 @@ a:hover {
 .navbar-button_signin {
   background-color: white !important;
   color: black;
-  text-transform: capitalize;
+  text-transform: capitalize  !important;
 }
 
 .navbar-right ul li {
@@ -117,7 +121,7 @@ ul {
     background-color: black !important;
     color: white !important;
     // margin-top: 15px !important;
-    text-transform: capitalize;
+    text-transform: capitalize  !important;
   }
 
   .navbar-menu-mobile {

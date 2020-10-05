@@ -1,0 +1,17 @@
+@import '../../mixins';
+
+.header-container__headline .header-div-products {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  @media (max-width: $screen-sm-min) {
+    display:none;
+  }
+}
+.header-div-products-button {
+  font-size: $text-xs !important;
+  text-transform: capitalize !important;
+
+}

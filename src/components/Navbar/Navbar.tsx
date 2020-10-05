@@ -4,19 +4,22 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import Grid from '@material-ui/core/Grid';
+import Divider from '@material-ui/core/Divider';
 
 //Style
 import './NavBar.scss';
 
 export default function ButtonAppBar() {
+
   return (
     <AppBar className="navbar">
       <Grid container spacing={2}>
         <Grid item xs={3}>
           <a href="https://www.hippoed.com/" className="navbar-brand">
-            HIPPO <span className="navbar-brand-span">Education</span>
+            HIPPO <span className="navbar-brand-span">EDUCATION</span>
           </a>{' '}
           <div className="navbar-menu-mobile">
             <IconButton
@@ -30,7 +33,7 @@ export default function ButtonAppBar() {
         </Grid>
         <Grid item xs={6}>
           <a href="https://www.hippoed.com/" className="navbar-brand-mobile">
-            HIPPO <span className="navbar-brand-span">Education</span>
+            HIPPO <span className="navbar-brand-span">EDUCATION</span>
           </a>{' '}
         </Grid>
         <Grid item xs={3}>
@@ -40,6 +43,11 @@ export default function ButtonAppBar() {
                 <a href="https://www.hippoed.com/" className="nav-products">
                   Products{' '}
                   <span className="navbar-hippo-products">From Hippo</span>
+                  <Divider
+                    orientation="vertical"
+                    flexItem
+                    className="something"
+                  />
                 </a>
               </li>
               <li>
