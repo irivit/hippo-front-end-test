@@ -1,0 +1,132 @@
+@import '../../mixins';
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent !important;
+  flex-grow: 1;
+  box-shadow: none !important;
+}
+
+.navbar.MuiAppBar-positionFixed {
+  position: absolute !important;
+}
+.navbar-brand {
+  font-size: 24px;
+  line-height: 25px;
+  height: 70px;
+  background-color: transparent;
+  text-decoration: none !important;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+a:hover {
+  text-decoration: none !important;
+  color: white;
+}
+
+.navbar-brand-span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin-left: 15px;
+  @media (max-width: $screen-sm-min) {
+    margin-left: 0;
+  }
+}
+
+.navbar-hippo-products {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.navbar-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navbar-right li {
+  display: block;
+  position: relative;
+}
+
+.navbar-button_signin {
+  background-color: white !important;
+  color: black;
+  text-transform: capitalize;
+}
+
+.navbar-right ul li {
+  font-size: 14px;
+  // text-align: center;
+  float: left;
+  margin-right: 10px;
+}
+
+.navbar-right ul li a {
+  background-color: transparent;
+  text-decoration: none;
+  color: silver;
+}
+
+.navbar-right ul li a:hover {
+  color: white;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.navbar-brand-mobile,
+.navbar-menu-mobile {
+  display: none;
+}
+
+@media (max-width: $screen-sm-min) {
+  .navbar-brand-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 25px;
+    background-color: transparent;
+    text-decoration: none !important;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    align-self: center;
+    text-align: center;
+  }
+
+  .navbar-button_signin {
+    background-color: black !important;
+    color: white !important;
+    // margin-top: 15px !important;
+    text-transform: capitalize;
+  }
+
+  .navbar-menu-mobile {
+    display: flex;
+  }
+
+  .navbar-hippo-products,
+  .nav-products,
+  .navbar-brand {
+    display: none;
+  }
+}

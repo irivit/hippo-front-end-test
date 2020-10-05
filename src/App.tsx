@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageGrid from './components/ImageGrid/ImageGrid';
 import TopicCloud from './components/TopicCloud/TopicCloud';
+import Navbar from './components/Navbar/Navbar';
 
 import './App.scss';
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="homepage">
       <div className="header-container">
+        <Navbar />
         <h1 className="header-container__headline">
           Empowering the people of medicine through education and community.
         </h1>
