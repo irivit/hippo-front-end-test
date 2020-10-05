@@ -1,17 +1,30 @@
 @import '../../mixins';
 
+
+
 .image-grid {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .image-grid__image {
-  width: 50%;
-  @media (min-width: $screen-md-min) {
-    width: calc(100% / 3);
-  }
-  @media (max-width: $screen-sm-min) {
-    width: calc(100% / 2);
-  }
+  width: 100%;
+  // @media (min-width: $screen-md-min) {
+  //   width: calc(100% / 3);
+  // }
+  // @media (max-width: $screen-sm-min) {
+  //   width: calc(100% / 2);
+  //   width: 100%;
+  //   height: auto;
+  // }
 
+}
+
+@media (max-width: $screen-sm-min) {
+  // .image-container {
+  //   height: 0;
+  //   position: relative;
+  //   overflow: hidden;
+  //   padding-bottom: 75%;
+  // }
 }
