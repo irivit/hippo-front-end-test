@@ -10,8 +10,19 @@
     display:none;
   }
 }
-.header-div-products-button {
-  font-size: $text-xs !important;
-  text-transform: capitalize !important;
 
+
+
+.page-content-ourProductsButton {
+  text-transform: initial !important;
+  box-shadow: none !important;
+  padding: 10px 100px !important;
+  color: #fff !important;
+  background-color: $sales-page-blue !important;
+  font-size: 1rem !important;
+  margin: 20px 0 !important;
+  max-width: 365px;
+  @media (max-width: $screen-xs-min) {
+    min-width: 100% !important;
+  }
 }

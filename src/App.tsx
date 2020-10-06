@@ -3,6 +3,7 @@ import ImageGrid from './components/ImageGrid/ImageGrid';
 import TopicCloud from './components/TopicCloud/TopicCloud';
 import Navbar from './components/Navbar/Navbar';
 import Button from './components/Button/Button';
+import Section1 from './components/Section1/Section1';
 
 import './App.scss';
 
@@ -13,10 +14,11 @@ function App() {
         <Navbar />
         <h1 className="header-container__headline">
           Empowering the people of medicine through education and community.
-          <Button />
         </h1>
+        <Button />
       </div>
       <div className="page-content">
+        <Section1 />
         <span>Learn. Grow. Thrive.</span>
 
         <span>
