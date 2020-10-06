@@ -1,0 +1,25 @@
+@import '../../mixins';
+
+.section4_mainContainer {
+  @media (min-width: $screen-xs-min) {
+    margin-bottom: 180px;
+  }
+}
+
+.section4_textBlock {
+  @media (min-width: $screen-xs-min) {
+    align-content: center;
+    display: grid;
+  }
+}
+
+.nonShowOnXs {
+  @media (max-width: $screen-xs-min) {
+    display: none;
+  }
+}
+.showOnXs {
+  @media (min-width: $screen-xs-min) {
+    display: none;
+  }
+}
