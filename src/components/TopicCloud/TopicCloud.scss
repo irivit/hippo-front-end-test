@@ -21,14 +21,15 @@
   font-size: 1.6em;
 }
 .topic-cloud-header li {
-  font-size: 25px;
+  font-size: 1.6em;
+  line-height: 3.4rem;
   display: inline;
   font-family: $font-family-primary;
 }
 
 .topic-cloud-titles {
-  font-size: 25px;
+  font-size: 1.6em;
   font-family: $font-family-primary;
-  line-height: 25px;
+  line-height: 3.4rem;
   color: $gray-darken-2;
 }

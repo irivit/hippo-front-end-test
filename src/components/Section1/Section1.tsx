@@ -1,8 +1,11 @@
 import React from 'react';
+
 import Grid from '@material-ui/core/Grid';
-import './Section1.scss';
+
 import home1 from '../../images/Homepage-Images/home1.png';
 import OurProductsButton from '../Button/Button';
+
+import './Section1.scss';
 
 function Section1() {
   return (
