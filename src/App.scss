@@ -1,5 +1,6 @@
 @import './mixins';
 
+
 .page-content {
   margin: auto;
   max-width: $screen-xl-min;
@@ -25,4 +26,17 @@
   text-align: center;
   color: white;
   width: 80%;
+}
+
+
+.page-content-paddingLeft {
+  @media (min-width: $screen-xs-min) {
+    padding-left: 160px;
+  }
+}
+
+.page-content-paddingRight {
+  @media (min-width: $screen-xs-min) {
+    padding-right: 160px;
+  }
 }

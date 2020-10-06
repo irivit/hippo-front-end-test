@@ -25,13 +25,13 @@ function ImageGrid() {
           <img className="image-grid__image" alt="product 3" src={grid3} />
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4}>
-          <img className="image-grid__image" alt="product 1" src={grid4} />
+          <img className="image-grid__image" alt="product 4" src={grid4} />
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4}>
-          <img className="image-grid__image" alt="product 2" src={grid5} />
+          <img className="image-grid__image" alt="product 5" src={grid5} />
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4}>
-          <img className="image-grid__image" alt="product 3" src={grid6} />
+          <img className="image-grid__image" alt="product 6" src={grid6} />
         </Grid>
       </Grid>
     </div>
