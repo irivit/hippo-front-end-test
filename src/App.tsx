@@ -20,13 +20,18 @@ function App() {
         <h1 className="header-container__headline">
           Empowering the people of medicine through education and community.
         </h1>
-        <Button />
+        <Button displayNoneOnXs/>
       </div>
       <div className="page-content">
         <Section1 />
         <Section2 />
         <Section3 />
         <Section4 />
+
+        <h1 className="section-headlines page-content-paddingLeft imgSection-header">
+          See (and Hear) the Hippo Difference for Yourself
+        </h1>
+
         <ImageGrid />
         <TopicCloud />
       </div>

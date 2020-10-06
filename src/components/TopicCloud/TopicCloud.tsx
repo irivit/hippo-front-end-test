@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { useTopicData } from '../../hooks/useTopicData';
 
+//Style
 import './TopicCloud.scss';
 import '../../App.scss';
 

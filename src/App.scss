@@ -14,6 +14,7 @@
 .header-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -113,5 +114,11 @@
   width: 100%;
   @media (min-width: $screen-xs-min) {
     width: 60%;
+  }
+}
+
+.displayNoneOnXs {
+  @media (max-width: $screen-xs-min) {
+    display: none !important;
   }
 }
