@@ -25,7 +25,6 @@
   font-family: $font-family-brand;
 }
 
-
 a:hover {
   text-decoration: none !important;
   color: white;
@@ -66,7 +65,7 @@ a:hover {
 .navbar-button_signin {
   background-color: white !important;
   color: black;
-  text-transform: capitalize  !important;
+  text-transform: capitalize !important;
 }
 
 .navbar-right ul li {
@@ -101,6 +100,17 @@ ul {
   display: none;
 }
 
+.hearder-backg {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background: url('../../images/home.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
 @media (max-width: $screen-sm-min) {
   .navbar-brand-mobile {
     display: block;
@@ -121,7 +131,7 @@ ul {
     background-color: black !important;
     color: white !important;
     // margin-top: 15px !important;
-    text-transform: capitalize  !important;
+    text-transform: capitalize !important;
   }
 
   .navbar-menu-mobile {

@@ -27,11 +27,6 @@ function App() {
         <Section2 />
         <Section3 />
         <Section4 />
-
-        <h1 className="section-headlines page-content-paddingLeft imgSection-header">
-          See (and Hear) the Hippo Difference for Yourself
-        </h1>
-
         <ImageGrid />
         <TopicCloud />
       </div>

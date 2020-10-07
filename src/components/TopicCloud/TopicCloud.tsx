@@ -20,16 +20,16 @@ function TopicCloud() {
 
   return (
     <div className="page-content-paddingLeft page-content-paddingRight topic-cloud-container">
-      <div className="topic-cloud">
-        <div className="topic-cloud-header">
-          <h4>Browse Education Topics by Specialty: </h4>
+      {/* <div className="topic-cloud"> */}
+        <div className="topic-cloud-header topic-cloud">
           <ul>
+           <p className="education-topic-ul dynamic mc-mx-2 d-block d-sm-inline-block">Browse Education Topics by Specialty: </p>
             {specialties.map((specialty) => (
-              <li>{`${specialty}   `}</li>
+              <li className ="dynamic-li mc-mx-2 mc-my-1 d-inline-block"><a className="dynamic-li-a">{`${specialty}   `}</a></li>
             ))}
           </ul>
         </div>
-      </div>
+      {/* </div> */}
       <div className="topic-cloud-titles">
         {/* <ul> */}
         {topics.map((topic) => (

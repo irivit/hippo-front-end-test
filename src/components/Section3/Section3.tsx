@@ -1,16 +1,28 @@
 import React from 'react';
-
 import Grid from '@material-ui/core/Grid';
-
-
+import './Section3.scss';
 import home3 from '../../images/Homepage-Images/home3.png';
 import OurProductsButton from '../Button/Button';
-
-import './Section3.scss';
+import ifInViewportChangeTranslAndOpac from '../../util/functions/ifInViewportChangeTranslAndOpac';
 
 function Section3() {
+  document.addEventListener(
+    'scroll',
+    function () {
+      ifInViewportChangeTranslAndOpac('.section3_mainContainer');
+      ifInViewportChangeTranslAndOpac('.section3_textBlock');
+    },
+    {
+      passive: true
+    }
+  );
+
   return (
-    <Grid container spacing={0} className="section3_mainContainer">
+    <Grid
+      container
+      spacing={0}
+      className="section3_mainContainer floatEffectBase"
+    >
       <Grid item xs={12} sm={5}>
         <img className="section-images" alt="home3" src={home3} />
       </Grid>
@@ -20,7 +32,7 @@ function Section3() {
         item
         xs={12}
         sm={5}
-        className="page-content-paddingRight section3_textBlock"
+        className="page-content-paddingRight section3_textBlock floatEffectBase"
       >
         <h1 className="section-headers2">
           Unrivaled Educational Excellence

@@ -1,15 +1,28 @@
 import React from 'react';
-
 import Grid from '@material-ui/core/Grid';
-
+import './Section1.scss';
 import home1 from '../../images/Homepage-Images/home1.png';
 import OurProductsButton from '../Button/Button';
-
-import './Section1.scss';
+import ifInViewportChangeTranslAndOpac from '../../util/functions/ifInViewportChangeTranslAndOpac';
 
 function Section1() {
+  document.addEventListener(
+    'scroll',
+    function () {
+      ifInViewportChangeTranslAndOpac('.section1_mainContainer');
+      ifInViewportChangeTranslAndOpac('.section1-textBlock');
+    },
+    {
+      passive: true
+    }
+  );
+
   return (
-    <Grid container spacing={0} className="section1_mainContainer">
+    <Grid
+      container
+      spacing={0}
+      className="section1_mainContainer floatEffectBase"
+    >
       <Grid item xs={12} sm={5}>
         <h1 className="section-headlines page-content-paddingLeft">
           Learn. Grow.
@@ -19,7 +32,12 @@ function Section1() {
       </Grid>
       <Grid item xs={false} sm={1} />
 
-      <Grid item xs={12} sm={6} className="page-content-paddingRight">
+      <Grid
+        item
+        xs={12}
+        sm={6}
+        className="page-content-paddingRight section1-textBlock floatEffectBase"
+      >
         <h1 className="section-headers2">
           At Hippo Education, we believe that medical education should upgrade
           your practice and your life.
