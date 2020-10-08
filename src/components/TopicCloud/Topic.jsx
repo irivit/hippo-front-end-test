@@ -56,6 +56,7 @@ export default class Topic extends Component {
               </li>
               {specialties.map((specialty, i) => (
                 <li
+                style={{position:"relative", marginRight: "15px"}}
                   className={
                     specialty === this.state.selectedSpecialty
                       ? 'topic-cloud-title-selected'

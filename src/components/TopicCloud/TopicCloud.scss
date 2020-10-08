@@ -16,29 +16,37 @@
 .topic-cloud-header li {
   display: inline-block !important;
   font-family: $font-family-primary !important;
-//   margin-bottom: 25px;
+  //   margin-bottom: 25px;
   line-height: 2;
 }
 
-
-
-.topic-cloud-header-specialities{
-  margin-right: 15px;
+.topic-cloud-header-specialities {
+//   margin-right: 15px;
   font-size: 1.3rem;
   font-family: $font-family-primary !important;
-  margin-top:0;
+  margin-top: 0;
   justify-content: center;
-  @media (max-width: $screen-xs-min) {
-    font-size: 20px !important;
-  }
 
+  //   @media (max-width: $screen-xs-min) {
+  //     font-size: 20px !important;
+  //   }
 }
-
+.topic-cloud-header-specialities::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  bottom: -4px;
+  left: auto;
+  right: 0;
+  height: 3px;
+  background: $sales-page-blue;
+  transition: width 0.8s ease;
+}
 
 .topic-cloud-titles {
   font-family: $font-family-primary;
   color: #a5a5a5;
-
 }
 
 .topic-cloud-titles span {
@@ -64,14 +72,19 @@ a {
 .topic-cloud-title-selected {
   font-weight: bold;
 }
+.topic-cloud-title-selected ::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
 
-.topic-cloud-spacialty-browse{
-    font-weight: bold;
-    font-size: 1.65rem;
-    line-height: 2.4rem !important;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    // @media (max-width: $screen-xs-min) {
-    //     font-size: 30px !important;
-    //   }
+.topic-cloud-spacialty-browse {
+  font-weight: bold;
+  font-size: 1.65rem;
+  line-height: 2.4rem !important;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  // @media (max-width: $screen-xs-min) {
+  //     font-size: 30px !important;
+  //   }
 }
