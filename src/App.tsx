@@ -2,7 +2,7 @@ import React from 'react';
 
 import ImageGrid from './components/ImageGrid/ImageGrid';
 
-import TopicCloud from './components/TopicCloud/TopicCloud';
+import TopicCloud from './components/TopicCloud/Topic';
 import Navbar from './components/Navbar/Navbar';
 import Button from './components/Button/Button';
 import Section1 from './components/Section1/Section1';

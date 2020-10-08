@@ -16,7 +16,7 @@ export default function ButtonAppBar() {
     <>
       <div className="hearder-backg" />
       <AppBar className="navbar">
-        <Grid container spacing={2}>
+        <Grid container spacing={0}>
           <Grid item xs={3}>
             <a href="https://www.hippoed.com/" className="navbar-brand">
               HIPPO <span className="navbar-brand-span">EDUCATION</span>
