@@ -1,15 +1,12 @@
 @import '../../mixins';
 
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
+.image-grid .MuiGrid-root{
+  line-height: 0;
+  width: 100%;
 }
 
 .image-grid__image {
-  width: 50%;
-  @media (min-width: $screen-md-min) {
-    width: calc(100% / 3);
-  }
+  width: 100%;
 }
 
 .imgSection-header {
