@@ -6,10 +6,10 @@ import grid3 from '../../images/grid3.png';
 import grid4 from '../../images/grid4.png';
 import grid5 from '../../images/grid5.png';
 import grid6 from '../../images/grid6.png';
+import Grid from '@material-ui/core/Grid';
 import isCompletelyInViewport from '../../util/functions/isCompletelyInViewport';
 
 function ImageGrid() {
-  
   // Event to move the header in the x index
   document.addEventListener(
     'scroll',
@@ -37,12 +37,32 @@ function ImageGrid() {
         See (and Hear) the Hippo Difference for Yourself
       </h1>
       <div className="image-grid">
-        <img className="image-grid__image" alt="product 1" src={grid1} />
+        {/* <img className="image-grid__image" alt="product 1" src={grid1} />
         <img className="image-grid__image" alt="product 2" src={grid2} />
         <img className="image-grid__image" alt="product 3" src={grid3} />
         <img className="image-grid__image" alt="product 4" src={grid4} />
         <img className="image-grid__image" alt="product 5" src={grid5} />
-        <img className="image-grid__image" alt="product 6" src={grid6} />
+        <img className="image-grid__image" alt="product 6" src={grid6} /> */}
+        <Grid container spacing={0}>
+          <Grid item xs={6} sm={4}>
+            <img className="image-grid__image" alt="product 1" src={grid1} />
+          </Grid>
+          <Grid item xs={6} sm={4}>
+            <img className="image-grid__image" alt="product 2" src={grid2} />
+          </Grid>
+          <Grid item xs={6} sm={4}>
+            <img className="image-grid__image" alt="product 3" src={grid3} />
+          </Grid>
+          <Grid item xs={6} sm={4}>
+            <img className="image-grid__image" alt="product 1" src={grid4} />
+          </Grid>
+          <Grid item xs={6} sm={4}>
+            <img className="image-grid__image" alt="product 2" src={grid5} />
+          </Grid>
+          <Grid item xs={6} sm={4}>
+            <img className="image-grid__image" alt="product 3" src={grid6} />
+          </Grid>
+        </Grid>
       </div>
     </>
   );
