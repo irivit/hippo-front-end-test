@@ -7,7 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 
 //Style
-import './Navbar.scss';
+import './NavBar.scss';
 
 export default function ButtonAppBar() {
   return (

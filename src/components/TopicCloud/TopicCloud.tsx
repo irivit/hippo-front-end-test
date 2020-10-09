@@ -62,7 +62,7 @@ class TopicCloud extends React.Component<IProps, IState> {
         </div>
         </div>
         <div className="topic-cloud-titles section-headers2">
-          {/* <ul> */}
+      
           {topics.map((topic) => (
             <span
               className={
@@ -71,9 +71,8 @@ class TopicCloud extends React.Component<IProps, IState> {
                   : ''
               }
             >{`${topic.title}   `}</span>
-            // <span>{topic.title}</span>
           ))}
-          {/* </ul> */}
+  
         </div>
       </div>
     );

@@ -9,6 +9,8 @@ import grid6 from '../../images/grid6.png';
 import isCompletelyInViewport from '../../util/functions/isCompletelyInViewport';
 
 function ImageGrid() {
+  
+  // Event to move the header in the x index
   document.addEventListener(
     'scroll',
     function () {
