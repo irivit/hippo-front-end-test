@@ -35,32 +35,8 @@ class TopicCloud extends React.Component<IProps, IState> {
       position: 0,
       counter: 0
     };
-    // this.timer = setInterval(this.count, 1000)
-    // this._interval = setInterval(this.count, 1000);
+
 }
-        // componentDidMount{
-        //     // this.timer = function ()
-        //     this.setInterval(this.timer(), 1000);
-        // }
-
-
-// this.timer = function {
-//     this.setState({ position: this.state.counter + 1 });
-//     console.log('counter',this.state.counter );
-//     console.log('position',this.state.position );
-    
-//     (this.state.counter > 7) ? this.setState({ counter: 0, position: 0})  : "";
-// }
-
-//  componentWillUnmount() {
-     
-//  }
- 
-
-// setInterval(() => {
-//     console.log(index);
-//     const index = index === 10 ? 0 : index + 1;
-// }, 1000);
 
 
   render() {

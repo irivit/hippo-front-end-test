@@ -43,7 +43,7 @@ function Section4() {
         item
         xs={false}
         sm={5}
-        className="page-content-paddingLeft section4_grind1  nonShowOnXs"
+        className="page-content-paddingLeft section4_textBlock  nonShowOnXs"
       >
         {Header2AndText('section4_textBlock-1')}
       </Grid>

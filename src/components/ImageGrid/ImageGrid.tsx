@@ -15,12 +15,12 @@ function ImageGrid() {
       var element: any = document.querySelector('.imgSection-header');
       const res: any = isCompletelyInViewport(element);
       if (res) {
-        if (element.style.opacity != '1') element.style.opacity = '1';
-        if (element.style.transform != 'translateX(0)')
+        if (element.style.opacity !== '1') element.style.opacity = '1';
+        if (element.style.transform !== 'translateX(0)')
           element.style.transform = 'translateX(0)';
       } else {
-        if (element.style.opacity != '0') element.style.opacity = '0';
-        if (element.style.transform != 'translateX(-50px)')
+        if (element.style.opacity !== '0') element.style.opacity = '0';
+        if (element.style.transform !== 'translateX(-50px)')
           element.style.transform = 'translateX(-50px)';
       }
     },

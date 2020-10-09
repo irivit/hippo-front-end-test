@@ -23,7 +23,6 @@ export default class Topic extends Component {
 
   startInterv = () => {
     this.setInterval = setInterval(() => {
-      console.log(`contador`, this.state.position);
       if (this.state.position >= specialties.length - 1)
         this.setState({ position: 0, selectedSpecialty: specialties[0] });
       else
@@ -33,6 +32,7 @@ export default class Topic extends Component {
         });
     }, 2500);
   };
+  
   stopInterv = () => {
     clearInterval(this.setInterval);
   };
@@ -56,11 +56,10 @@ export default class Topic extends Component {
               </li>
               {specialties.map((specialty, i) => (
                 <li
-                style={{position:"relative", marginRight: "15px"}}
                   className={
                     specialty === this.state.selectedSpecialty
-                      ? 'topic-cloud-title-selected'
-                      : ''
+                      ? 'topic-cloud-title-selected topic-cloud-specialties-margin'
+                      : 'topic-cloud-specialties-margin'
                   }
                   onMouseLeave={() => {
                     this.startInterv();
@@ -74,7 +73,7 @@ export default class Topic extends Component {
                     });
                   }}
                 >
-                  <span className="topic-cloud-header-specialities">{`${specialty}   `}</span>
+                  <a className="topic-cloud-header-specialities">{`${specialty}   `}</a>
                 </li>
               ))}
             </ul>

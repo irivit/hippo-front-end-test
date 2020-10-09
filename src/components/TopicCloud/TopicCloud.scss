@@ -3,6 +3,10 @@
 .topic-cloud-container {
   padding-bottom: 150px;
   padding-top: 150px;
+  background-color: rgb(245,247,249);
+  @media (max-width: $screen-xs-min) {
+    padding-top: 100px;
+    }
 }
 .topic-cloud {
   margin-top: 70px;
@@ -13,24 +17,20 @@
   margin-bottom: 25px;
   padding: 0;
 }
+
 .topic-cloud-header li {
   display: inline-block !important;
   font-family: $font-family-primary !important;
-  //   margin-bottom: 25px;
   line-height: 2;
 }
 
 .topic-cloud-header-specialities {
-//   margin-right: 15px;
   font-size: 1.3rem;
   font-family: $font-family-primary !important;
   margin-top: 0;
   justify-content: center;
-
-  //   @media (max-width: $screen-xs-min) {
-  //     font-size: 20px !important;
-  //   }
 }
+
 .topic-cloud-header-specialities::after {
   position: absolute;
   content: '';
@@ -64,6 +64,10 @@ a {
   cursor: pointer;
 }
 
+a:hover{
+    color: black !important;
+  }
+
 .topic-cloud-specialty-selected {
   color: black;
   font-weight: bold;
@@ -72,6 +76,7 @@ a {
 .topic-cloud-title-selected {
   font-weight: bold;
 }
+
 .topic-cloud-title-selected ::after {
   right: auto;
   left: 0;
@@ -84,7 +89,10 @@ a {
   line-height: 2.4rem !important;
   margin-right: 15px;
   margin-bottom: 10px;
-  // @media (max-width: $screen-xs-min) {
-  //     font-size: 30px !important;
-  //   }
+
+}
+
+.topic-cloud-specialties-margin{
+    position: relative !important;
+    margin-right: 15px;
 }

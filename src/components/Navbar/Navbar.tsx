@@ -9,54 +9,45 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 
 //Style
-import './NavBar.scss';
+import './Navbar.scss';
 
 export default function ButtonAppBar() {
   return (
     <>
       <div className="hearder-backg" />
       <AppBar className="navbar">
-        <Grid container spacing={0}>
-          <Grid item xs={3}>
+        <div className="navbar-container">
+          <div className="navbar-header">
             <a href="https://www.hippoed.com/" className="navbar-brand">
               HIPPO <span className="navbar-brand-span">EDUCATION</span>
             </a>{' '}
-            <div className="navbar-menu-mobile">
-              <IconButton
-                aria-label="show more"
-                aria-haspopup="true"
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-            </div>
-          </Grid>
-          <Grid item xs={6}>
-            <a href="https://www.hippoed.com/" className="navbar-brand-mobile">
+          </div>
+          <div className="navbar-menu-mobile">
+            <IconButton
+              aria-label="show more"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+          </div>
+          <div className="navbar-header-mobile">
+            <a href="https://www.hippoed.com/" className="navbar-brand">
               HIPPO <span className="navbar-brand-span">EDUCATION</span>
             </a>{' '}
-          </Grid>
-          <Grid item xs={3}>
-            <div className="navbar-right">
-              <ul>
-                <li className="navbar-products">
-                  <a href="https://www.hippoed.com/" className="nav-products">
-                    Products{' '}
-                    <span className="navbar-hippo-products">From Hippo</span>
-                    <Divider
-                      orientation="vertical"
-                      flexItem
-                      className="something"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <Button className="navbar-button_signin">Sign in</Button>
-                </li>
-              </ul>
-            </div>
-          </Grid>
-        </Grid>
+          </div>
+          <ul className="nav navbar-nav navbar-right">
+            <li className="navbar-education">
+              <a href="https://www.hippoed.com/" className="nav-products">
+                Products{' '}
+                <span className="navbar-hippo-products">From Hippo</span>
+              </a>
+            </li>
+            <li className="navbar-sign-in">
+              <a href="https://www.hippoed.com//signin">Sign In</a>
+            </li>
+          </ul>
+        </div>
       </AppBar>
     </>
   );
